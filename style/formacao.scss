@@ -1,0 +1,44 @@
+@use "colors";
+@use "shadows";
+
+
+#formacao {
+    background-color: colors.$ternary;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        padding: 1rem;
+    }
+
+    min-height: 40rem;
+}
+
+.formacao-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formacao-box {
+
+    background-color: colors.$neutre;
+    width: 20rem;
+    border-radius: 50px;
+    box-shadow: shadows.$easy;
+
+
+    .formacao-date {
+        font-size: large;
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    .formacao-curso {
+        text-align: center;
+        font-size: large;
+    }
+
+}

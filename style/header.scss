@@ -1,0 +1,27 @@
+@use "colors";
+
+
+
+header {
+    background-color: colors.$primary;
+    color: colors.$neutre;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        padding: 1rem;
+        font-weight: normal;
+    }
+
+    nav {
+        display: flex;
+
+        a {
+            color: colors.$neutre;
+            display: block;
+            text-decoration: none;
+            padding: 1em;
+        }
+    }
+}

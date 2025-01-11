@@ -1,0 +1,22 @@
+section.about-me {
+  width: 100%;
+}
+
+#about-me-content {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -ms-flex-align: center;
+  justify-content: space-around;
+  width: 80%;
+}
+#about-me-content img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  display: inline;
+}
+#about-me-content .text {
+  display: inline;
+}/*# sourceMappingURL=about-me.css.map */

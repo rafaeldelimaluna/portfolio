@@ -1,0 +1,15 @@
+@use "colors";
+
+
+footer{
+    background-color: black;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: large;
+    }
+}

@@ -1,0 +1,20 @@
+header {
+  background-color: #0075F2;
+  color: #FFFFFC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  padding: 1rem;
+  font-weight: normal;
+}
+header nav {
+  display: flex;
+}
+header nav a {
+  color: #FFFFFC;
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+}/*# sourceMappingURL=header.css.map */

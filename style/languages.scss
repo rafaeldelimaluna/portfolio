@@ -1,0 +1,68 @@
+@use "colors";
+
+#languages {
+
+    background-color: colors.$cream;
+    min-height: 40rem;
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .language-container {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .language-box {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 50px;
+            border-radius: 50px;
+            transition: .2s;
+            box-shadow: 0 0 .4em #0000003a;
+            &:hover{
+                box-shadow: 0 0 0;
+            }
+
+            img {
+                position: absolute;
+                width: 90%;
+                height: 90%;
+                left: 5%;
+                top: 5%;
+                filter: opacity(0.1);
+            }
+
+            a {
+                color: black;
+                font-weight: bold;
+                font-size: large;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+            }
+        }
+    }
+
+}
+
+#python-proj:hover {
+    background-color: colors.$python-primary;
+}
+
+#charp-proj:hover {
+    background-color: colors.$csharp-primary;
+}
+
+#js-proj:hover {
+    background-color: colors.$js-primary;
+}
