@@ -1,0 +1,50 @@
+body {
+  display: block;
+}
+
+main {
+  width: 80vh;
+  max-width: 90vw;
+  min-height: 100vh;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 2em 2rem 2em;
+  margin-bottom: 2rem;
+  background-color: #FFFFFC;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: #E6E3DB;
+}
+
+.swiper {
+  width: 80vh;
+  position: relative;
+  max-width: 95vw;
+  height: auto;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  display: block;
+}
+
+li {
+  list-style-position: inside;
+}
+
+article.project {
+  margin-top: 1rem;
+}
+article.project:not(article.project:first-child) {
+  margin-top: 5em;
+}
+article.project section p {
+  text-indent: 1em;
+}/*# sourceMappingURL=projects.css.map */

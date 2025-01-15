@@ -4,38 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Projetos Python</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script defer type="module" src="../js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Projetos Python</h1>
+        <h1><a href="../index.html">Rafael Luna</a></h1>
         <nav>
-            <a href="#linguagens">Linguagens</a>
-            <a href="#formacao">Formação</a>
+            <a href="../projects/js-proj.html">Projetos Js</a>
+            <a href="../projects/csharp-proj.html">Projetos C#</a>
         </nav>
     </header>
 
     <main>
         <article class="project">
-            <h1>Investimentos</h1>
+            <h1>Lista de Atividades</h1>
             <section class="about">
                 <h2>Sobre o Projeto</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque quam iste ad harum quisquam reprehenderit placeat laboriosam consequuntur. Ullam quo, expedita sint nostrum minus cumque nisi suscipit. Quis, expedita?</p>
-                <p>Hic numquam corporis similique, aut esse expedita doloremque nemo. Sapiente, soluta et perferendis reprehenderit, architecto animi magnam repellat autem enim maiores similique iusto consequatur nihil neque ipsum sequi quisquam ullam!</p>
-                <p>Optio ex tempore hic incidunt. In voluptates cupiditate voluptatum eum minus consequatur iure, ipsa dolor. Doloribus id quis corrupti, tempora modi in qui. Aut tempore inventore deserunt illum perferendis fugiat.</p>
-                <p>Vero nesciunt fuga voluptatum laudantium incidunt, quaerat numquam ea sint, veniam enim, temporibus maiores quisquam. Molestiae obcaecati natus nesciunt sit possimus doloremque iusto sint officiis voluptatibus, atque perspiciatis. Tempora, delectus.</p>
-                <p>Reiciendis nam neque blanditiis nulla, similique aliquid. Et nulla exercitationem eveniet. Illum officiis dignissimos autem tempora, modi repellat, similique eius nam blanditiis quasi rem quas inventore minima velit mollitia quae?</p>
+                <p>
+                    Projeto para uso pessoal. Visa-se criar uma lista de atividades que possa organizar melhor o tempo
+                    que vou tomar em cada atividade e posteriormente o descanso.
+                </p>
+                <p>
+                    A inserção das atividades devem ter o padrão ReGEX de "copia e cola" das atividades da platafroma
+                    "professorferretto.com.br" na versão de 2024.
+                </p>
+                <p>
+                    Além desse padrão da plataforma Ferretto, deve-se aceitar a inserção manual por meio de outro
+                    pattern estabelecido, para inserção de atividades domésticas e tempo de descanso.
+                </p>
+                <p>
+            </section>
+            <section class="libs">
+                <h3>Neste projeto utilizei as bibliotecas:</h3>
+                <ul>
+                    <li>PyQt6 (Para interface gráfica)</li>
+                    <li>sqlite3</li>
+                </ul>
             </section>
             <section class="images">
-                
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../images/python-proj/todo-list/20250112_160038.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="../images/python-proj/todo-list/20250112_160058.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="../images/python-proj/todo-list/20250112_160103.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="../images/python-proj/todo-list/20250112_160107.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="../images/python-proj/todo-list/20250112_160206.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="../images/python-proj/todo-list/20250112_160229.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="../images/python-proj/todo-list/20250112_160252.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="../images/python-proj/todo-list/20250112_160405.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+        </article>
+
+        <article class="project">
+            <h1>Cronograma Flexível</h1>
+            <section class="about">
+                <p>
+                    Desenvolvido perto das férias de meio de ano do 2⁰ ano do ensino médio para organizar meus
+                    estudos. Equilibrando as aulas
+                    com atividades, simulados e aulas de revisões.
+                </p>
+                <p><strong>Agora vem a dúvida: Faz sentido fazer um app somente para isso? SIM!</strong> A minha
+                    rotina basicamente era: ir para escola de período integral,
+                    voltar para casa, fazer exercício físico, comer e <strong>estudar em casa</strong>
+                    . Após os estudos, eu fazia uma lista do que teria de estudar no dia seguinte, encaixando
+                    perfeitamente cada
+                    aula, exercício... tempo de descanso para formar blocos de estudo (caso não saiba o que é, este
+                    vídeo irá ajudar: <a href="https://www.youtube.com/watch?v=lu1hZLOQGw8">blocos de estudo</a>)
+                </p>
+                <p>
+                    Como muito frequentemente ocorriam imprevistos, aquele planejamento que eu tinha feito no dia
+                    anterior era basicamente perdido (E GASTA UM BOM TEMPO PARA CRIAR UM NOVO).
+                    Além disso, conforme ia avançando nas matérias, ficava cada vez mais complicado de fazer os
+                    exerícios de outros asssuntos da mesma matéria(a famosa revisão espaçada), com isso, uma carga
+                    de tempo
+                    cada vez maior era criada para cada planejamento.
+                </p>
+                <p>
+                    Com este grande problema em mãos, resolvi criar o app. Demorou cerca de um 4 semanas para fazer
+                    (tive que aprender a lib PyQt6 que é relativamente complexa, e possui uma documentação um tanto
+                    confusa).
+                </p>
+                <p>Usei ele por um bom tempo, e realmente resolveu o problema descrito.</p>
+            </section>
+            <section class="libs">
+                <section class="libs">
+                    <h3>Neste projeto utilizei as bibliotecas:</h3>
+                    <ul>
+                        <li>PyQt6 (GUI)</li>
+                        <li>qt_material</li>
+                    </ul>
+                </section>
+            </section>
+            <section class="images">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164044.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164048.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164056.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164114.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164146.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164156.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164437.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164448.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164455.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164500.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164605.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164623.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164630.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../images/python-proj/cronograma-flexivel/Captura de imagem_20250112_164644.png"
+                                alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                </div>
             </section>
         </article>
     </main>
     <footer>
         <a href="https://github.com/rafaeldelimaluna">Rafael Luna * 2025</a>
     </footer>
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            centeredSlides: true
+        });
+    </script>
 </body>
 
 </html>

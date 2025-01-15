@@ -17,11 +17,21 @@ section.about-me {
 
     img {
         width: 50%;
-        height: 50%;
+        height: auto;
         border-radius: 50%;
         display: inline;
     }
     .text{
         display: inline;
+        p{text-indent: 1em;}
+    }
+}
+
+@media only screen and (orientation:portrait){
+    #about-me-content {
+        flex-direction: column;
+        img{
+            width: 50%;
+            }
     }
 }

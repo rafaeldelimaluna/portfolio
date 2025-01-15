@@ -13,10 +13,22 @@ section.about-me {
 }
 #about-me-content img {
   width: 50%;
-  height: 50%;
+  height: auto;
   border-radius: 50%;
   display: inline;
 }
 #about-me-content .text {
   display: inline;
+}
+#about-me-content .text p {
+  text-indent: 1em;
+}
+
+@media only screen and (orientation: portrait) {
+  #about-me-content {
+    flex-direction: column;
+  }
+  #about-me-content img {
+    width: 50%;
+  }
 }/*# sourceMappingURL=about-me.css.map */

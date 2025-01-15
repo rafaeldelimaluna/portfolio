@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Js</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script defer type="module" src="../js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">Rafael Luna</a></h1>
+        <nav>
+            <a href="python-proj.html">Projetos Python</a>
+            <a href="csharp-proj.html">Projetos C#</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="project">
+            <h1>Distúrbios Alimentares</h1>
+            <section class="about">
+                <p>Trabalho em grupo do 1⁰ ano do E.M. de Estudos Avançados de Ciências da Natureza e suas
+                    Tecnologias(EACNT). Fiquei encarregado do site e recebi grande ajuda do <a
+                        href="https://github.com/carlosnacamura">Carlos Nacamura</a>.</p>
+                <p>A parte chave do projeto é a calculadora, que possui diversos cálculos genéricos de padrões de saúde.
+                    Acontece que são muitos e foi bem desafiador.</p>
+                <p>Veja o site como ficou: <a href="https://projeto-eacnit.vercel.app/index.html">Clique aqui!</a></p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <a href="https://github.com/rafaeldelimaluna">Rafael Luna * 2025</a>
+    </footer>
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            centeredSlides: true
+        });
+    </script>
+</body>
+
+</html>

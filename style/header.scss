@@ -1,17 +1,37 @@
 @use "colors";
-
+@use "border-radius";
+@use "shadows";
 
 
 header {
     background-color: colors.$primary;
+
     color: colors.$neutre;
+
+    position: sticky;
+    top: 0;
+
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
+    z-index: 2;
+
+    transition: .2s;
+
+    box-shadow: 0 0 0 black;
+
     h1 {
-        padding: 1rem;
-        font-weight: normal;
+
+        a{
+            text-decoration: none;
+            padding: 1rem;
+            font-weight: normal;
+            transition: .2s;
+            animation-timing-function: ease-in-out;
+            color: colors.$neutre;
+        }
     }
 
     nav {
@@ -19,9 +39,62 @@ header {
 
         a {
             color: colors.$neutre;
-            display: block;
+            position: relative;
             text-decoration: none;
-            padding: 1em;
+
+            display: block;
+            margin: 1em;
+
+            &::before {
+                content: " ";
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                left: 50%;
+                height: 2px;
+                background-color: #ffffff;
+                transition: .125s;
+                margin: auto;
+            }
+
+            &:hover::before {
+                left: 0;
+                width: 100%;
+            }
         }
     }
+}
+
+
+
+header.non-top {
+    background-color: colors.$primary-opacity-50;
+    border-radius: border-radius.$medium;
+    backdrop-filter: blur(3px);
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    top: 0.5rem;
+    box-shadow: shadows.$easy;
+
+    h1 {
+        padding: 0;
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (orientation:portrait){
+    header{
+        justify-content: center;
+        &.non-top{justify-content: center;}
+        h1{padding-left: 0;}
+
+        nav{
+        a{
+            display: none;
+        }
+    }
+    }
+
 }
