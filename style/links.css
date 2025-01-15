@@ -1,0 +1,9 @@
+@charset "UTF-8";
+a[target=_blank] {
+  display: inline-block;
+  position: relative;
+}
+
+a[target=_blank]::after {
+  content: "🔗";
+}/*# sourceMappingURL=links.css.map */
