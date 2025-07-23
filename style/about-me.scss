@@ -1,5 +1,6 @@
 @use "colors";
 @use "border-radius";
+@use "shadows";
 
 section.about-me {
     width: 100%;
@@ -20,18 +21,24 @@ section.about-me {
         height: auto;
         border-radius: 50%;
         display: inline;
+        box-shadow: shadows.$easy;
     }
-    .text{
+
+    .text {
         display: inline;
-        p{text-indent: 1em;}
+
+        p {
+            text-indent: 1em;
+        }
     }
 }
 
-@media only screen and (orientation:portrait){
+@media only screen and (orientation:portrait) {
     #about-me-content {
         flex-direction: column;
-        img{
+
+        img {
             width: 50%;
-            }
+        }
     }
 }
